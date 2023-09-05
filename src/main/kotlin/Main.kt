@@ -7,7 +7,7 @@ fun main() {
     val userChoice = readln().toInt()
 
     if (userChoice == 1){
-        //RESIDENTIAL
+        //RESIDENTIAL VALUES
         println("What is your name?")
         val name = readln()
 
@@ -18,7 +18,7 @@ fun main() {
         customerSearch(name, phoneNumber)
 
     }else if (userChoice == 2){
-        //Business
+        //Business values
         println("What is the name of the Business?")
         val bisName = readln()
 
@@ -27,6 +27,7 @@ fun main() {
 
         println("What is the Name of the Contact?")
         val contactName = readln()
+
         //use the Business parameters
         customerSearch(contactName, contactNumber, bisName)
 
@@ -47,6 +48,6 @@ fun customerSearch(name:String, phoneNum:String){
 
 
 //Business Parameters
-fun customerSearch(name:String, phoneNum:String, buisName:String){
-    println("$buisName\n$name\n$phoneNum")
+fun customerSearch(name:String, phoneNum:String, bisName:String){
+    println("$bisName\n$name\n$phoneNum")
 }
